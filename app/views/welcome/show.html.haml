@@ -1,0 +1,5 @@
+%p=@doc.contents
+
+=link_to "All docs", docs_path 
+=link_to "Edit doc", edit_doc_path(@doc)
+=link_to "Delete doc", doc_path(@doc),method: :delete, data: { confirm: 'Are you sure to proceed with delete?' }
